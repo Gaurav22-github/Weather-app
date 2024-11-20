@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://i.gifer.com/Lx0q.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: linear-gradient(135deg, rgba(33, 147, 176, 0.85), rgba(109, 213, 237, 0.85));
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.app-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#inp {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+#inp:focus {
+  border-color: #2193b0;
+  box-shadow: 0 0 8px rgba(33, 147, 176, 0.3);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2193b0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #176b8a;
+}
+
+#weather-box {
+  margin-top: 20px;
+}
+
+.loading-gif {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+}
+
+.city-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.weather-info h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.weather-info h4 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #666;
+}
+
+img {
+  margin: 10px 0;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  .app-title {
+      font-size: 28px;
+  }
+
+  #inp {
+      font-size: 14px;
+      padding: 10px 12px;
+  }
+
+  button {
+      padding: 10px 15px;
+      font-size: 14px;
+  }
+
+  .loading-gif {
+      width: 60px;
+      height: 60px;
+  }
+
+  .city-name {
+      font-size: 20px;
+  }
+
+  .weather-info h2 {
+      font-size: 18px;
+  }
+
+  .weather-info h4 {
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-title {
+      font-size: 24px;
+  }
+
+  .input-container {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
